@@ -21,4 +21,20 @@ func main() {
 	default:
 		fmt.Println("No hay condicion")
 	}
+
+	//uso de Defer
+	defer fmt.Println("Hola")
+	fmt.Println("Mundo")
+
+	//Continue y break
+	for i := 0; i < 31; i++ {
+
+		//continue
+		if i%2 == 0 {
+			fmt.Println("Es par")
+			continue
+		} else {
+			fmt.Println("Es impar ", i)
+		}
+	}
 }
